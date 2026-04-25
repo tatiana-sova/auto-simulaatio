@@ -1,29 +1,3 @@
-"""
-Käyttöliittymätehtävä
- 
-Harjoittelet tkinter-kirjaston käyttöä ja opit tekemään käyttöliittymän ohjelmaasi. Tkinterin käyttö
-on hyvin helppoa, käyttöliittymän suunnittelu ja yhdistäminen toiminnallisuuteen haastavampaa.
- 
-Minimivaatimukset:
--neljä nappia  - button
--yksi liukusäädin - scale
--kaksi tekstikenttää - 
--yksi radiobutton valinta
- 
-Keksit joko uuden sovelluksen tai teet aikaisempaan harjoitukseen graafisen
-käyttöliittymän. Esimerkkinä voisi olla kauppatehtävä tai henkilö+auto tai jopa koulu+luokka+opiskelijat
- 
- 
-Yhdistät funktion nappulaan komennolla: command
- 
-Jos funktiossa on argumentteja käytät lambda rakennetta:
-https://www.tutorialspoint.com/article/tkinter-button-commands-with-lambda-in-python
- 
-Huomaa, että voit aina debugata printtaamalla Pythonin shelliin!
- 
-https://docs.python.org/3/library/tkinter.html
-"""
-
 from numpy import random
 import tkinter as tk
 from tkinter import *
@@ -154,8 +128,7 @@ def tankata():
     if mun_auto.km_perille == 0:
         mun_auto.matka = 0
 
-# Button(polttoaine_frame, text='Tankata', command=tankata).pack(pady=10)
-nappula_polttoaine = tk.Button(polttoaine_frame, text="Tankata",command=tankata) #funktio kytketään nappulan painamiseen
+nappula_polttoaine = tk.Button(polttoaine_frame, text="Tankata",command=tankata) 
 nappula_polttoaine.pack(padx=10, pady=5)
 
 matkamittari_frame = tk.LabelFrame(ikkuna, text="Matkamittari", width=100, height=50)
@@ -169,9 +142,8 @@ def paivitys():
     tekstikentta_matkamittari.delete(0, tk.END) 
     tekstikentta_matkamittari.insert(0, str(mun_auto.matkamittari))
 
-# Button(matkamittari_frame, text='Päivitys', command=paivitys).pack(pady=10)
 
-nappula_matkamittari = tk.Button(matkamittari_frame, text="Päivitys",command=paivitys) #funktio kytketään nappulan painamiseen
+nappula_matkamittari = tk.Button(matkamittari_frame, text="Päivitys",command=paivitys) 
 nappula_matkamittari.pack(padx=10, pady=5)
 
 renkaat_frame = tk.LabelFrame(ikkuna, text="Renkaat", width=100, height=50)
@@ -334,38 +306,6 @@ speed_scale.set(5)
 speed_scale.pack(pady=10)
 
 nappula_start = tk.Button(ikkuna, text="Start",command=start_ajo) #funktio kytketään nappulan painamiseen
-# nappula_start.place(x=270, y=950)
 nappula_start.pack(padx=10, pady=10)
 
-# laskuri = 0
-# while laskuri < 30:
-#     mun_auto.liiku()
-#     laskuri += 1
-#     laskuri_rengas = 0
-#     while laskuri_rengas < 4:
-#         rengas_auto = mun_auto.renkaat[laskuri_rengas]
-#         if rengas_auto.ehja == 0:
-#             print(mun_auto.kuljettaja.huutaa)
-#             break
-#         laskuri_rengas += 1
-#     
-#     salo.tie_auto()
-#     laskuri_tie = 0
-#     while laskuri_tie < 30:
-#         if laskuri_tie == laskuri:
-#             print("A",end = " ")
-#             if rengas_auto.ehja == 0:
-#                 print("X",end = " ")
-#                 laskuri_tie += 1
-#         else: print(salo.tie[laskuri_tie],end = " ")
-#         laskuri_tie += 1
-#     print("")
-#     
-#     if rengas_auto.ehja == 0:
-# #         print("ajo loppuu")
-#         break
-
-
 ikkuna.mainloop()
-
-        
