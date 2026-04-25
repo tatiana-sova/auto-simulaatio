@@ -21,7 +21,6 @@ The car moves step by step while:
 
 The simulation can continue after fixing issues.
 
-```markdown
 ## ▶️ How to run
 
 Make sure you have Python installed.
