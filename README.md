@@ -36,3 +36,7 @@ Tkinter
 
 👩‍💻 Author
 Tatiana Chertakova
+
+## Screenshot
+
+![App Screenshot](screenshot.png)
