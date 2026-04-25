@@ -39,4 +39,5 @@ Tatiana Chertakova
 
 ## Screenshot
 
-![App Screenshot](screenshot.png)
+![App Screenshot](auto-simulaatio
+/screenshot.png)
