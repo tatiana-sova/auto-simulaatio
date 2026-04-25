@@ -29,7 +29,7 @@ Run the program:
 
 ```bash
 python main.py
-
+```
 📚 Technologies
 Python
 Tkinter
