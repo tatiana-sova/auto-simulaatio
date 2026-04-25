@@ -29,7 +29,6 @@ Run the program:
 
 ```bash
 python main.py
-```markdown
 
 📚 Technologies
 Python
@@ -40,4 +39,4 @@ Tatiana Chertakova
 
 ## Screenshot
 
-![App Screenshot]([screenshot.png](https://github.com/tatiana-sova/auto-simulaatio/blob/main/screenshot.png))
+![App Screenshot](screenshot.png)
