@@ -39,4 +39,4 @@ Tatiana Chertakova
 
 ## Screenshot
 
-![App Screenshot](screenshot.png)
+![App Screenshot](https://github.com/tatiana-sova/auto-simulaatio/blob/main/screenshot.png)
